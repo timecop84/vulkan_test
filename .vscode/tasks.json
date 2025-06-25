@@ -1,0 +1,14 @@
+{
+    // Build the project using CMake
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "CMake Build",
+            "type": "shell",
+            "command": "cmake",
+            "args": ["--build", "build"],
+            "group": "build",
+            "problemMatcher": ["$gcc"]
+        }
+    ]
+}

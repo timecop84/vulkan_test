@@ -1,0 +1,13 @@
+# Ignore build artifacts and temporary files
+/build/
+*.obj
+*.exe
+*.pdb
+*.ilk
+*.log
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+*.vcxproj*
+*.sln
