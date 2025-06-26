@@ -71,3 +71,52 @@ or
 ```
 make clean
 ```
+
+## Build Instructions (MinGW, Makefile)
+
+This project uses a Makefile that wraps CMake and shader compilation for easy building on Windows with MinGW.
+
+### Prerequisites
+- CMake (in your PATH)
+- MinGW (g++, mingw32-make in your PATH)
+- glslc (from the Vulkan SDK, in your PATH)
+- Vulkan SDK and GLFW (set VULKAN_SDK and GLFW_ROOT if not hardcoded)
+
+### Build and Run
+
+1. Open a terminal in the project directory:
+   ```
+   cd path/to/vulkan_test
+   ```
+2. To build everything (shaders and C++):
+   ```
+   mingw32-make
+   ```
+   or
+   ```
+   mingw32-make all
+   ```
+3. To only build shaders:
+   ```
+   mingw32-make shaders
+   ```
+4. To only build the C++ code (after shaders):
+   ```
+   mingw32-make build
+   ```
+5. To clean the build and shader outputs:
+   ```
+   mingw32-make clean
+   ```
+6. To time the build:
+   ```
+   time mingw32-make
+   ```
+7. To run the executable:
+   ```
+   .\build\Debug\VulkanTest.exe
+   ```
+### Notes
+- The executable will be in the `build` directory if using CMake defaults.
+- Make sure all required tools are in your PATH.
+- You can edit the Makefile to adjust paths for your system if needed.

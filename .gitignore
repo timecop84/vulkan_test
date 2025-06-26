@@ -4,10 +4,11 @@
 *.exe
 *.pdb
 *.ilk
+*.o
 *.log
+*.spv
 CMakeFiles/
 CMakeCache.txt
 cmake_install.cmake
-Makefile
 *.vcxproj*
 *.sln
